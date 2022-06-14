@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hi There !</title>
+  <link rel="stylesheet" href="./style.css">
+  <style type="text/css">
+    .video-container {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      transform: translate(-50%, -50%);
+    }
+
+    #myVideo{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100vw;
+      min-height: 100vh;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+      .video-container video {
+        /* height = 100 * (9 / 16) = 56.25 */
+        height: 56.25vw;
+      }
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+      .video-container video {
+        /* width = 100 / (9 / 16) = 177.777777 */
+        width: 177.78vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="video-container">
+     <video loop="false" id="myVideo" autoplay="true">
+      <source src="./aw.mp4" type="video/mp4">
+    </video>
+  </div>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="screen"
+    rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+  <div class="profile-card-wrap">
+    <input id="check" type="checkbox" class="check"><label for="check" class="toggle"> + </label>
+    <div class="content" data-text="Hi there !">
+      <div class="title">@igor_marty</div>
+      <p>I'm a web designer from France who love Polymer-project, HTML/CSS and dogs. <br /> <br /> Teaching is what I
+        like, Learning is what I love.</p>
+    </div>
+    <div class="link-info">
+      <div class="social">
+        <a class="link oc" href="https://openclassrooms.com/membres/igormarty" target="_blank"><i
+            class="fa fa-graduation-cap"></i></a>
+        <a class="link tw" href="https://twitter.com/igor_marty" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="link cp" href="https://codepen.io/IMarty/" target="_blank"><i class="fa fa-codepen"></i></a>
+        <a class="link gh" href="https://github.com/IMarty" target="_blank"><i class="fa fa-github"></i></a>
+        <a class="link li" href="https://fr.linkedin.com/in/igormarty" target="_blank"><i
+            class="fa fa-linkedin"></i></a>
+        <a class="link gp" href="https://plus.google.com/u/0/+IgorMarty" target="_blank"><i
+            class="fa fa-google-plus"></i></a>
+      </div>
+      <div class="photo"></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+
+</body>
+
+<!-- <body>
+  <video loop="" id="myVideo" autoplay="true" >
+    <source src="./ak.mp4" type="video/mp4">
+  </video>  
+</body> -->
+
+</html>
