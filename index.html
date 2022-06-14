@@ -57,23 +57,21 @@
   <div class="profile-card-wrap">
     <input id="check" type="checkbox" class="check"><label for="check" class="toggle"> + </label>
     <div class="content" data-text="Hi there !">
-      <div class="title">@igor_marty</div>
-      <p>I'm a web designer from France who love Polymer-project, HTML/CSS and dogs. <br /> <br /> Teaching is what I
-        like, Learning is what I love.</p>
+      <div class="title" id="nama">Tuntuk Teman Teman SMKN 4 Kota Bogor</div>
+      <p id="pesan">Hidup ini masih sangat panjang dan kematian menunggu Kita DI Kemudian Hari, Tapi Atas 3 Tahun Ku Bersama Kalian adalah Bunga Terindahku yang Sangat Berharga Dalam Kisah Hidupku Terimakasih.</p>
     </div>
     <div class="link-info">
       <div class="social">
-        <a class="link oc" href="https://openclassrooms.com/membres/igormarty" target="_blank"><i
-            class="fa fa-graduation-cap"></i></a>
-        <a class="link tw" href="https://twitter.com/igor_marty" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a class="link cp" href="https://codepen.io/IMarty/" target="_blank"><i class="fa fa-codepen"></i></a>
-        <a class="link gh" href="https://github.com/IMarty" target="_blank"><i class="fa fa-github"></i></a>
-        <a class="link li" href="https://fr.linkedin.com/in/igormarty" target="_blank"><i
-            class="fa fa-linkedin"></i></a>
-        <a class="link gp" href="https://plus.google.com/u/0/+IgorMarty" target="_blank"><i
-            class="fa fa-google-plus"></i></a>
+        <a class="link oc" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+        <a class="link tw" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+        <a class="link cp" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+        <a class="link gh" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+        <a class="link li" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+        <a class="link gp" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
       </div>
-      <div class="photo"></div>
+      <div class="photo" style="
+        background:url(http://rpl1.rpl12022.skom.id/FSP/Admin/images/_MG_0477.jpg) #fff no-repeat center / cover;
+      "></div>
     </div>
   </div>
   <script src="./script.js"></script>
@@ -85,5 +83,19 @@
     <source src="./ak.mp4" type="video/mp4">
   </video>  
 </body> -->
+
+<script type="text/javascript">
+  
+    function  load_all() {
+      const nama = urlParams.get('nama')
+      const pesan = urlParams.get('pesan')
+      const urlimg = urlParams.get('urlimg')
+      document.getElementById('nama').innerHTML = nama
+      
+    }    
+    
+
+
+</script>
 
 </html>

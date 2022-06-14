@@ -28,8 +28,8 @@ body{
 .profile-card-wrap .content{
 	top:0%;
 	left:7%;
-	width:500px;
-	height:290px;
+	width:70vw;
+	height:60vh;
 	padding:30px;
 	position:relative;
 	-webkit-backface-visibility:hidden;
@@ -66,7 +66,7 @@ body{
 }
 .profile-card-wrap .content p{
 	margin:0;
-	max-width:190px;
+	max-width:350px;
 	line-height:24px;
 	text-align:center;
 }
@@ -145,7 +145,7 @@ body{
 	border-radius:50%;
 	border:5px solid #fff;
 	transform:scale(.6);
-	background:url(https://pbs.twimg.com/profile_images/1679507836/avatar_igor_400x400.jpg) #fff no-repeat center / cover;
+/*	background:url(http://rpl1.rpl12022.skom.id/FSP/Admin/images/_MG_0519.jpg) #fff no-repeat center / cover;*/
 	box-shadow:0 0 2px, 0 5px 5px rgba(47,66,81,.75);
 	transition:transform .5s ease-in-out 0s;
 }
