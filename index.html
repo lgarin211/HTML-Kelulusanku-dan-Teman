@@ -69,9 +69,7 @@
         <a class="link li" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
         <a class="link gp" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
       </div>
-      <div class="photo" style="
-        background:url(http://rpl1.rpl12022.skom.id/FSP/Admin/images/_MG_0477.jpg) #fff no-repeat center / cover;
-      "></div>
+      <div class="photo" style="background:url(http://rpl1.rpl12022.skom.id/FSP/Admin/images/_MG_0477.jpg) #fff no-repeat center / cover;"id="ywe"></div>
     </div>
   </div>
   <script src="./script.js"></script>
@@ -87,13 +85,18 @@
 <script type="text/javascript">
   
     function  load_all() {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
       const nama = urlParams.get('nama')
       const pesan = urlParams.get('pesan')
       const urlimg = urlParams.get('urlimg')
       document.getElementById('nama').innerHTML = nama
-      
-    }    
-    
+      document.getElementById('pesan').innerHTML = pesan
+      document.getElementById('ywe').style=`background:url(${urlimg}) #fff no-repeat center / cover;`
+    }  
+    load_all()
+
 
 
 </script>
