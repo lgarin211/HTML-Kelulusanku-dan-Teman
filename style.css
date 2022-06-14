@@ -361,7 +361,19 @@ body {
 	.profile-card-wrap .content {
 		top: 0%;
 		left: 7%;
-		width: 50vw;
-		height: 25vh;
+		width: 55vw;
+		height: 30vh;
 	}
+	.profile-card-wrap .toggle{
+		width: 50px;
+		height: 50px;
+		top	: 60%;
+		right: 100px;
+	}
+
+	.profile-card-wrap .content p{
+		max-width: 250px;
+		font-size: 25px;
+	}
+	
 }
