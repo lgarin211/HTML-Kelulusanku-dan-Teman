@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Hi There !</title>
+  <title>Hai Kamu - Selamat Lulus</title>
   <link rel="stylesheet" href="./style.css">
   <style type="text/css">
     .video-container {
@@ -20,7 +20,7 @@
       transform: translate(-50%, -50%);
     }
 
-    #myVideo{
+    #myVideo {
       position: fixed;
       top: 50%;
       left: 50%;
@@ -47,7 +47,7 @@
 
 <body>
   <div class="video-container">
-     <video loop="false" id="myVideo" autoplay="true">
+    <video loop="false" id="myVideo" autoplay="true">
       <source src="./aw.mp4" type="video/mp4">
     </video>
   </div>
@@ -58,7 +58,8 @@
     <input id="check" type="checkbox" class="check"><label for="check" class="toggle"> + </label>
     <div class="content" data-text="Hi there !">
       <div class="title" id="nama">Tuntuk Teman Teman SMKN 4 Kota Bogor</div>
-      <p id="pesan">Hidup ini masih sangat panjang dan kematian menunggu Kita DI Kemudian Hari, Tapi Atas 3 Tahun Ku Bersama Kalian adalah Bunga Terindahku yang Sangat Berharga Dalam Kisah Hidupku Terimakasih.</p>
+      <p id="pesan">Hidup ini masih sangat panjang dan kematian menunggu Kita DI Kemudian Hari, Tapi Atas 3 Tahun Ku
+        Bersama Kalian adalah Bunga Terindahku yang Sangat Berharga Dalam Kisah Hidupku Terimakasih.</p>
     </div>
     <div class="link-info">
       <div class="social">
@@ -69,7 +70,9 @@
         <a class="link li" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
         <a class="link gp" href="#" target="_blank"><i class="fa fa-graduation-cap"></i></a>
       </div>
-      <div class="photo" style="background:url(http://rpl1.rpl12022.skom.id/FSP/Admin/images/_MG_0477.jpg) #fff no-repeat center / cover;"id="ywe"></div>
+      <div class="photo"
+        style="background:url(http://rpl1.rpl12022.skom.id/FSP/Admin/images/_MG_0477.jpg) #fff no-repeat center / cover;"
+        id="ywe"></div>
     </div>
   </div>
   <script src="./script.js"></script>
@@ -83,19 +86,20 @@
 </body> -->
 
 <script type="text/javascript">
-  
-    function  load_all() {
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
 
-      const nama = urlParams.get('nama')
-      const pesan = urlParams.get('pesan')
-      const urlimg = urlParams.get('urlimg')
+  function load_all() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const nama = urlParams.get('nama')
+    const pesan = urlParams.get('pesan')
+    const urlimg = urlParams.get('urlimg')
+    if (nama!=null) {
       document.getElementById('nama').innerHTML = nama
       document.getElementById('pesan').innerHTML = pesan
-      document.getElementById('ywe').style=`background:url(${urlimg}) #fff no-repeat center / cover;`
-    }  
-    load_all()
+      document.getElementById('ywe').style = `background:url(${urlimg}) #fff no-repeat center / cover;` 
+    }
+  }
+  load_all()
 
 
 
