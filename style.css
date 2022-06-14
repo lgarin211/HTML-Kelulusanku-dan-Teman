@@ -357,11 +357,11 @@ body {
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 700px) {
 	.profile-card-wrap .content {
 		top: 0%;
 		left: 7%;
-		width: 60vw;
+		width: 50vw;
 		height: 25vh;
 	}
 }
